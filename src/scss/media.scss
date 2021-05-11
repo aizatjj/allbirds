@@ -1,0 +1,366 @@
+@mixin lines {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #212A2F;
+  transition: 0.5s;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+  .shoes__buttons {
+    left: 0;
+    transform: translate(99%, 16%);
+  }
+  .carousel .slider img {
+    width: 330px;
+    height: 330px;
+  }
+  .stories__img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .container {
+    max-width: 940px;
+  }
+  .carousel .slider img {
+    width: 350px;
+    height: 350px;
+  }
+  .favorites {
+    padding: 82px 0 122px;
+  }
+
+  .shoes__buttons {
+    transform: translate(75%, 16%);
+  }
+  .carousel {
+    padding: 0 0 90px;
+  }
+  .forNature .video__item {
+    height: 475px;
+  }
+  .forNature__desc-title {
+    font-size: 30px;
+  }
+  .forNature__desc-subtitle {
+    font-size: 14px;
+  }
+  .forNature__desc-title {
+    font-size: 30px;
+  }
+  .forNature__desc-subtitle {
+    font-size: 14px;
+  }
+  .stories__img {
+    width: 300px;
+    height: 300px;
+  }
+  .carousel__prev {
+    left: 2%;
+  }
+  .carousel__next {
+    right: 8%;
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+    padding: 266px 0 40px;
+  }
+  .home__title {
+    font-size: 40px;
+  }
+  .home__subtitle {
+    font-size: 16px;
+    margin-bottom: 129px;
+  }
+  .shoes__title {
+    font-size: 30px;
+  }
+  .shoes__subtitle {
+    font-size: 14px;
+  }
+  .favorites .col-lg-4 {
+    width: 50%;
+    margin: 0 auto 30px;
+  }
+  .shoes {
+    padding: 0 0 100px;
+  }
+  .shoes__buttons {
+    transform: translate(63%, 16%);
+  }
+  .forNature__desc-title {
+    margin-bottom: 15px;
+  }
+  .photo__desc-subtitle {
+    font-size: 14px;
+  }
+  .carousel__next {
+    right: 3%;
+  }
+  .carousel__prev {
+    left: 1%;
+  }
+}
+
+@media (max-width: 880px) {
+  .header__right {
+    display: none;
+  }
+  .header__left {
+    display: none;
+  }
+  .header__logo {
+    left: 3%;
+  }
+  .header__icons img {
+    padding-right: 20px;
+  }
+  .header__burger {
+    display: none;
+    z-index: 1;
+
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: #212A2F;
+
+    }
+  }
+
+  .burger {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 13px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 2;
+
+    &.active {
+      .burger__line {
+        background: none;
+        z-index: 2;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+          background: #FFFFFF;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-45deg);
+          background: #FFFFFF;
+        }
+      }
+    }
+
+    &__line {
+      width: 100%;
+      height: 2px;
+      background: #212A2F;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      transition: 0.5s;
+
+      &::before {
+        @include lines;
+        top: -11px;
+      }
+
+      &::after {
+        @include lines;
+        bottom: -11px;
+      }
+    }
+  }
+  .header__icons {
+    margin: 0 auto;
+  }
+  .shoes__buttons {
+    transform: translate(53%, 16%);
+  }
+  .forNature__desc-title {
+    font-size: 25px
+  }
+  .arrivals {
+    padding: 0 0 115px;
+  }
+
+  .arrivals .gallery__item img {
+    width: 100%;
+    height: 100%;
+  }
+  .arrivals .gallery__item {
+    width: 320px;
+  }
+  .arrivals__title {
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  .photo .view__img{
+    height: 390px;
+  }
+  .photo .mask__desc{
+    margin: 0;
+    font-size: 14px;
+    right: 4%;
+    top: 40%;
+  }
+  .photo .mask__title{
+    margin: 0;
+    font-size: 25px;
+    right: 15%;
+    top: 15%;
+  }
+  .photo__desc-btn{
+    width: 330px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .stories{
+    padding: 0 0 90px;
+  }
+  .stories__img{
+    width: 100%;
+  }
+  .stories__title{
+    font-size: 18px;
+  }
+  .stories__subtitle{
+    font-size: 12px;
+  }
+  .footer__email{
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 798px) {
+  .carousel .slider img{
+    width: 90%;
+  }
+  .forNature .video__item{
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  .carousel .slider img{
+    width: 250px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoes__img{
+    height: 425px;
+  }
+  .shoes__buttons{
+    transform: translate(52%, 16%);
+  }
+  .shoes__title{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .shoes__subtitle{
+    margin-bottom: 20px;
+  }
+  .shoes__btn{
+    width: 162px;
+    font-size: 12px;
+  }
+  .forNature .video__item{
+    height: 100%;
+  }
+  .forNature__desc-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .forNature__desc-btn{
+    width: 313px;
+    height: 43px;
+  }
+  .photo__desc-subtitle{
+    line-height: 22px;
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .home__title{
+   font-size: 27px;
+  }
+  .favorites{
+    padding: 65px 0 100px;
+  }
+  .carousel .slider img{
+    width: 90%;
+  }
+  .forNature{
+    padding: 0 0 75px;
+  }
+  .col-4{
+    height: 50%;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .stories__img{
+    width: 100%;
+    height: 100%;
+  }
+  .stories__main-title{
+    font-size: 26px;
+    text-align: center;
+  }
+  .stories__title{
+    font-size: 15px;
+    padding: 10px 0 8px;
+  }
+  .stories__subtitle{
+    margin-bottom: 10px;
+  }
+  .shoes__buttons{
+  }
+}
+
+@media (max-width: 425px) {
+  .home{
+    padding: 200px 6px 0 40px;
+  }
+  .header{
+    height: 50px;
+  }
+
+  .home__btn{
+    width: 125px;
+    margin-bottom: 20px;
+    margin-right: 38px;
+    height: 50px;
+  }
+  .home__title{
+    font-size: 21px;
+  }
+
+}

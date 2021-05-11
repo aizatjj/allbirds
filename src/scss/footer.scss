@@ -1,0 +1,90 @@
+.footer {
+  background-color: #212A2F;
+  padding: 70px 0 90px;
+  .container{
+    padding: 0 50px;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    @include text($roboto, 14px, #FFFFFF, 19px, 0.5px);
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    width: 302px;
+    height: 48px;
+    border-bottom-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 85, 89);
+    border-radius: 0;
+    outline: none;
+  }
+
+  &__button {
+    padding: 16px 30px;
+    background-color: rgb(77, 85, 89);
+    @include text($roboto, 14px, #FFFFFF, 19px, 0.5px);
+    text-transform: uppercase;
+    margin-left: 12px;
+    outline: none;
+  }
+
+  &__email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    @include text($roboto, 14px, #FFFFFF, 21px, 2px);
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+
+  &__link {
+    @include text($roboto, 12px, #FFFFFF, 12px, 0.5px);
+    text-decoration: none;
+    &::after{
+      transition: all .5s;
+    }
+    &::before{
+      color: #555;
+    }
+    &:hover{
+      color: #555;
+      transform: scale(0.8);
+    }
+  }
+
+  &__list {
+    margin-bottom: 16px;
+    list-style-type: none;
+  }
+
+  &__text {
+    @include text($roboto, 12px, #FFFFFF, 18px, 0.5px);
+    max-width: 293px;
+  }
+
+  &__row {
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+  }
+
+  &__img {
+    margin-right: 24px;
+  }
+
+  &__terms {
+    @include text($roboto, 12px, #FFFFFF, 18px, 0.5px);
+    text-align: center;
+    margin-top: 102px;
+  }
+}

@@ -1,0 +1,152 @@
+.photo {
+  padding: 0 0 119px;
+
+  .container {
+    padding: 0;
+  }
+
+
+  &__desc {
+    text-align: center;
+
+    &-title {
+      @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+      margin-bottom: 22px;
+    }
+
+    &-subtitle {
+      @include text($roboto, 16px, #212A2F, 24px, 0.5px);
+      margin-bottom: 26px;
+    }
+
+    &-btn {
+      @include btns(384px, 48px, #212A2F, #FFFFFF);
+      transition: 0.4s;
+
+      &:hover {
+        background: #FFFFFF;
+        color: #212A2F;
+        border: 2px solid #212A2F;
+      }
+    }
+  }
+
+  .view {
+    overflow: hidden;
+    position: relative;
+    background: #FFF;
+
+    &__img {
+      width: 100%;
+      height: 542px;
+      margin-bottom: 47px;
+      display: block;
+      position: relative;
+      transform: scaleY(1);
+      transition: all .7s ease-in-out;
+    }
+  }
+
+  .mask {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 542px;
+    background-color: transparent;
+    transition: all 0.5s linear;
+
+    &__img {
+      width: 50%;
+      height: 100%;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.5s linear;
+    }
+
+    &__title {
+      @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      background: transparent;
+      margin: 100px 185px 35px 35px;
+      transform: scale(0);
+      color: #333;
+      transition: all 0.5s linear;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    &__desc {
+      @include text($roboto, 16px, #212A2F, 24px, 0.5px);
+      background: transparent;
+      transform: scale(0);
+      color: #333;
+      transition: all 0.5s linear;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      margin: 160px 100px 0 20px;
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.5s linear;
+      margin-right: 20px;
+    }
+  }
+
+  .mask2 {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    transition: all 0.5s linear;
+  }
+
+  .view-tenth:hover .view__img {
+    -webkit-transform: scale(10);
+    transform: scale(10);
+    opacity: 0;
+  }
+
+  .view-tenth:hover .mask {
+    opacity: 1;
+  }
+
+  .view-tenth:hover .mask2 {
+    opacity: 1;
+  }
+
+  .view-tenth:hover .mask__img {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .view-tenth:hover .mask__title {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .view-tenth:hover .mask__desc {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .view-tenth:hover .mask__icon {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+
+}

@@ -1,0 +1,8 @@
+.shoes {
+  padding: 0 0 119px;
+}
+.shoes__img {
+  width: 100%;
+  height: 542px;
+  background: url("../images/shoes/shoes.png") no-repeat center/cover;
+}

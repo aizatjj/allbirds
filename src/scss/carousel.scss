@@ -1,0 +1,62 @@
+.carousel {
+  padding: 0 0 138px;
+  position: relative;
+
+  .container {
+    height: 100%;
+    padding: 50px;
+  }
+
+  &__title {
+    @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+    margin-bottom: 24px;
+  }
+
+  &__prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 50%;
+  }
+
+  &__next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 50%;
+    right: 10px;
+  }
+
+  .slider {
+    img {
+      text-align: center;
+      width: 396px;
+      height: 396px;
+      padding-right: -50px;
+      margin-bottom: 17px;
+    }
+
+    &__item {
+      &-subtitle {
+        @include text($roboto, 22px, #212A2F, 29px, 0.5px);
+        text-decoration: none;
+        padding-left: 18px;
+        z-index: 2;
+
+        &::after {
+          transition: all .5s;
+        }
+
+        &::before {
+          color: #555;
+        }
+
+        &:hover {
+          color: #555;
+          transform: scale(0.8);
+          text-decoration: #555;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.shoes {
+  padding: 0 0 119px;
+  text-align: center;
+
+  .container {
+    display: initial;
+  }
+
+  &__img {
+    width: 100%;
+    height: 542px;
+    background: url("../images/shoes/shoes.png") no-repeat center/cover;
+    margin-bottom: 47px;
+  }
+
+  &__title {
+    @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    @include text($roboto, 16px, #212A2F, 24px, 0.5px);
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    position: absolute;
+    left: 36%;
+  }
+
+  &__btn {
+    @include btns(180px, 48px, #212A2F, #FFFFFF);
+    margin-right: 24px;
+    transition: 0.5s;
+
+    &:hover {
+      background: #FFFFFF;
+      color: #212A2F;
+      border: 2px solid #212A2F;
+    }
+  }
+}
+

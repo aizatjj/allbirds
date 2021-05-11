@@ -1,0 +1,57 @@
+@import "../fonts/stylesheet.css";
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+$roboto: 'Roboto-normal', sans-serif;
+$thin: 'Roboto-Light', sans-serif;
+
+@mixin text($ff,$fs,$cl,$lh,$ls) {
+  font-family: $ff;
+  font-size: $fs;
+  color: $cl;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: normal;
+}
+
+@mixin btns($w,$h,$bcl,$cl) {
+  width: $w;
+  height: $h;
+  background-color: $bcl;
+  color: $cl;
+  border-radius: 2px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: $roboto;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: none;
+  text-align: center;
+}
+
+@import "header";
+@import "home";
+@import "favorites";
+@import "shoes";
+@import "carousel";
+@import "fornature";
+@import "arrivals";
+@import "photo";
+@import "stories";
+@import "footer";
+@import "media";

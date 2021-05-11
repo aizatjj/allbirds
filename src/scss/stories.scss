@@ -1,0 +1,21 @@
+.stories {
+  padding: 0 0 134px;
+
+  &__main-title {
+    @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+    margin-bottom: 24px;
+
+  }
+
+  &__title {
+    @include text($roboto, 22px, #212A2F, 29px, 0.5px);
+    padding: 17px 0 10px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include text($roboto, 16px, #212A2F, 24px, 0.5px);
+    text-align: center;
+
+  }
+}

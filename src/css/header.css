@@ -1,0 +1,23 @@
+.header {
+  padding: 11px 0;
+  background-color: #ffffff;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header__left {
+  padding: 15px 27px 18px;
+}
+.header__item {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 36px;
+}
+.header__icons {
+  margin-right: 17px;
+}

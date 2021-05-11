@@ -1,0 +1,53 @@
+.forNature {
+  padding: 0 0 119px;
+
+  .container {
+    padding: 0;
+  }
+
+  .video {
+    margin-bottom: 47px;
+
+    &__item {
+      height: 542px;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &-title {
+      @include text($roboto, 32px, #212A2F, 42px, 0.5px);
+      margin-bottom: 22px;
+    }
+
+    &-subtitle {
+      @include text($roboto, 16px, #212A2F, 24px, 0.5px);
+      margin-bottom: 26px;
+    }
+
+    &-btn {
+      @include text($roboto, 14px, #FFFFFF, 17px, 2px);
+      background-color: #212A2F;
+      width: 384px;
+      height: 48px;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+      padding-top: 12px;
+      transition: 0.5s;
+
+      &:hover {
+        background: #FFFFFF;
+        color: #212A2F;
+        border: 2px solid #212A2F;
+      }
+    }
+  }
+}
